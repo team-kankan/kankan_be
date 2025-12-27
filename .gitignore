@@ -1,5 +1,6 @@
 HELP.md
 .gradle
+.gradle/
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
@@ -18,7 +19,7 @@ bin/
 !**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -35,3 +36,32 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Env / Secrets ###
+.env
+.env.*
+!.env.example
+
+### Docker ###
+docker-compose.override.yml
+docker-compose.*.override.yml
+*.pid
+**/docker-data/
+**/docker/volumes/
+**/volumes/
+**/data/
+**/*-data/
+
+### Logs ###
+*.log
+logs/
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Temp ###
+tmp/
+.temp/
+*.swp
+*~
