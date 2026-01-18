@@ -64,3 +64,8 @@ tmp/
 .temp/
 *.swp
 *~
+
+# Allow built jar for deployment
+!/build/
+!/build/libs/
+!/build/libs/*.jar
