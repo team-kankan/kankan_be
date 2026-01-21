@@ -1,4 +1,4 @@
-package com.teamkankan.kankan;
+package com.teamkankan.kankan.global.health;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
