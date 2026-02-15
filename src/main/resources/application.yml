@@ -4,9 +4,12 @@ server:
 spring:
   datasource:
     url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:kankan}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:1234}
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+  config:
+    import: optional:file:.env[.properties]
 
   jpa:
     hibernate:
@@ -19,3 +22,6 @@ spring:
 logging:
   level:
     org.hibernate.SQL: debug
+
+jwt:
+  secret: kankan-super-secret-jwt-key-for-hs256-2026-project
